@@ -1,2 +1,2 @@
-# PRIMEIRA_CALCULADORA_PYTHON
- Minha primeira calculadora utilizando python, html e css.
+# Minha primeira calculadora em Python!!
+ Minha primeira calculadora utilizando Python, HTML e CSS.
