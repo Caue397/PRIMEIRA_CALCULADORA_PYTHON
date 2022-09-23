@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+<style>
+    
+    body {
+
+        margin:auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    fieldset {
+        border: 2px solid #3A5683;
+        border-radius:30px;
+        width:400px;
+        height: 250px;
+        margin-top: 150px;
+    }
+
+    legend {
+        text-align: center;
+        font-family: Cambria;
+        font-size:18px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+    }
+
+    button {
+        width: 150px;
+        border:none;
+        border-radius: 20px;
+        background-color: #2708A0;
+        color: white;
+        font-family: Cambria;
+    }
+
+    button:hover {
+        border: 2px solid black;
+        cursor: pointer;
+        width:170px;
+        height:60px;
+        border-radius: 30px;
+        font-size: 18px;
+    }
+
+</style>
+
+<body>
+    <fieldset>
+        <legend>CALCULADORA DIGITAL</legend>
+        <form action="http://127.0.0.1:5000/calc" method="get">
+            <div class="botoes">
+                <button>Acessar</button>
+            </div>    
+        </form>
+    </fieldset>
+    
+</body>
+</html>
