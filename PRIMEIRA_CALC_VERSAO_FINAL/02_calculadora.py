@@ -118,7 +118,7 @@ def exibe_calculadora():
         <input type="radio" name="ope" value="div">
         <label for='soma'>Soma:</label> 
         <input type="radio" name="ope" value="soma">
-        <label for='sub'>Subtracao:</label> 
+        <label for='sub'>Subtração:</label> 
         <input type="radio" name="ope" value="sub">
         <div class='botão'>
             <button type="submit">Calcular</button>
