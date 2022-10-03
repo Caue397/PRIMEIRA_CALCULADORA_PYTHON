@@ -1,7 +1,3 @@
-#baixe tb o arquivo 02_runtests_calculadora.py
-
-# leia as instruções lá
-
 from flask import Flask, request
 from flask import render_template
 
