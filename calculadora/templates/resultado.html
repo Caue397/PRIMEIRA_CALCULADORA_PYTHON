@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<style>
+    body {
+        background-color:#210B2C;
+    }
+    
+    .resultado {
+        float:right;
+        background-color: grey;
+        border: 1px solid black;
+        box-shadow: 1px 1px 1px black;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    div {
+        justify-content:center;
+        display:flex;
+        height:600px;
+
+    }
+
+    legend {
+        font-weight: bolder;
+    }
+
+    #a, #b {
+        text-align:center;
+        margin:auto;
+        width:130px;
+        display:flex;
+        height:30px;
+        box-shadow: 1px 1px 1px black;
+    }
+
+    .fatores {
+        display:flex;
+        justify-content:space-between;
+        flex-direction:row;
+        width:300px;
+        text-align:center;
+        margin-top:10px;
+    }
+
+    form {
+        width:300px;
+        height:390px;
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-betwen;
+        padding:30px;    
+        font-family:cambria;
+        font-size:16px;
+    }
+    button, label {
+        display:block;
+    }
+
+    label {
+        margin-top:15px;
+    }
+
+    button {
+        margin-top: 30px;
+        border:none;
+        background-color:#2708A0;
+        padding:7px;
+        width:100px;
+        font-family:cambria;
+        font-size:14px;
+        color: white;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    button:hover {
+        border: 2px solid black;
+        cursor:pointer;
+    }
+
+    fieldset {
+        border:2px solid black;
+        height:480px;
+        padding:0px;
+        margin-top:70px;
+        background-color:#A4303F;
+    }
+
+    legend {
+        text-align:center;
+        font-family:cambria;
+        font-size:18px;
+        background-color:#A4303F;
+        border:2px solid black;
+        padding:10px;
+    }
+
+    .comentario {
+        text-align:center;
+    }
+
+    .botão {
+        height:70px;
+    }
+
+</style>
+    <body>
+        <div>
+            <fieldset>
+            <legend>CALCULADORA</legend>
+            <form action="/resultado">
+            <div class='resultado'>
+                <p>{{var}}</p>
+            </div>
+            <div class='fatores'>
+                <input type="text" name="a" id="a" placeholder='Número 1'> 
+                <input type="text" name="b" id="b" placeholder='Número 2'>
+            </div>
+            <label for='mult'>Multiplicação:</label> 
+            <input type="radio" name="ope" value="mult">
+            <label for='div'>Divisão:</label> 
+            <input type="radio" name="ope" value="div">
+            <label for='soma'>Soma:</label> 
+            <input type="radio" name="ope" value="soma">
+            <label for='sub'>Subtração:</label> 
+            <input type="radio" name="ope" value="sub">
+            <div class='botão'>
+                <button type="submit">Calcular</button>
+            </div>
+            </form>
+            </fieldset>
+        </div>
+    </body>
+</html>
