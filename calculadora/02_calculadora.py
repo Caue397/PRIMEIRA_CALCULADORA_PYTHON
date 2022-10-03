@@ -2,7 +2,6 @@
 
 # leia as instruções lá
 
-import re
 from flask import Flask, request
 from flask import render_template
 
